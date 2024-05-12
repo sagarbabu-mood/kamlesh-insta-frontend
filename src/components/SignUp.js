@@ -42,7 +42,7 @@ export default function SignUp() {
     }else if (!passwordRegex.test(password)){
       return notifyA("Password must contain atleast 8 characters, including atleast 1 number and 1 includes both lower and uppercase letters and special characters for example #,?,! ")
     }
-    const Url = "/signup";
+    const Url = "http://localhost:3005/signup";
     const options = {
       method:'POST',
       headers: {

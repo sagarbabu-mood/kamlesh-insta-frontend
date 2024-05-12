@@ -30,7 +30,7 @@ export default function Profile() {
 
   useEffect(()=> {
     const fetchData = async () => {
-      try{const response = await fetch(`/user/${JSON.parse(localStorage.getItem("user"))._id}`,{
+      try{const response = await fetch(`http://localhost:3005/user/${JSON.parse(localStorage.getItem("user"))._id}`,{
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token")
         }

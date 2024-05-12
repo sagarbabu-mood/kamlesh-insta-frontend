@@ -24,7 +24,7 @@ export default function ProfilePic({changeprofile}) {
   }
 
   const postPic = async () => {
-    try{const res = await fetch("/uploadProfilePic",
+    try{const res = await fetch("http://localhost:3005/uploadProfilePic",
     {
       method: "PUT",
       headers: {

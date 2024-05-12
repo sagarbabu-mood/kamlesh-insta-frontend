@@ -45,7 +45,7 @@ const notifyB = msg => toast.success(msg, {
   useEffect(() => {
     const uploadImg = async () => {
       if(Url){
-        try {const res = await fetch("/createPost",
+        try {const res = await fetch("http://localhost:3005/createPost",
         {
           method: "POST",
           headers: {

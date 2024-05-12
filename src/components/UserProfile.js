@@ -12,7 +12,7 @@ export default function UserProfile() {
   useEffect(()=> {
     const fetchData = async () => {
       try{
-        const response = await fetch(`/user/${userid}`,{
+        const response = await fetch(`http://localhost:3005/user/${userid}`,{
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token")
         }
@@ -35,7 +35,7 @@ export default function UserProfile() {
   },[isFollow])
 
   const followUser = async userId => {
-    const response = await fetch("/follow",{
+    const response = await fetch("http://localhost:3005/follow",{
       method: 'PUT',
       headers: {
         'Content-Type':'application/json',
@@ -51,7 +51,7 @@ export default function UserProfile() {
   }
 
   const unfollowUser = async userId => {
-    const response = await fetch("/unfollow",{
+    const response = await fetch("http://localhost:3005/unfollow",{
       method: 'PUT',
       headers: {
         'Content-Type':'application/json',

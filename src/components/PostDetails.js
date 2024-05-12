@@ -32,7 +32,7 @@ export default function PostDetails({ item, showDetails }) {
   const deletePostFunc = async postId => {
     if (window.confirm("Are you really want to delete this post ?")) {
       try {
-        const response = await fetch(`/deletePost/${postId}`, {
+        const response = await fetch(`http://localhost:3005/deletePost/${postId}`, {
           method: 'DELETE',
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token")

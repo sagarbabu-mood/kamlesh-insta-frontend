@@ -40,7 +40,7 @@ export default function MyFollowingPost() {
 
     const fetchData = async () => {
       const token = localStorage.getItem("token")
-      try{const res = await fetch("/myfollowingpost",{
+      try{const res = await fetch("http://localhost:3005/myfollowingpost",{
         method:"GET",
         headers: {
           "Authorization": `Bearer ${token}`
@@ -57,7 +57,7 @@ export default function MyFollowingPost() {
   },[])
 
   const likePost = async (id)=> {
-    const response = await fetch("/like",{
+    const response = await fetch("http://localhost:3005/like",{
       method:'PUT',
       headers:{
         'Content-Type':"application/json",
@@ -79,7 +79,7 @@ export default function MyFollowingPost() {
   }
 
   const unlikePost = async (id)=> {
-    const response = await fetch("/unlike",{
+    const response = await fetch("http://localhost:3005/unlike",{
       method:'PUT',
       headers:{
         'Content-Type':"application/json",
@@ -101,7 +101,7 @@ export default function MyFollowingPost() {
   }
 
   const makeComment = async (id,commented) => { 
-    try{const response = await fetch("/comment",{
+    try{const response = await fetch("http://localhost:3005/comment",{
       method: 'PUT',
       headers: {
         "Content-Type": "application/json",
