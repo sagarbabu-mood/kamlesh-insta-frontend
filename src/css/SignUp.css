@@ -1,0 +1,62 @@
+.signUp{
+    background-image: url("https://img.freepik.com/premium-vector/horizontal-background-with-smooth-gradient-vector-illustration_522680-329.jpg");
+    flex: 1;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 370px;
+}
+
+.signUpLogo{
+    width: 200px;
+    object-fit: contain;
+    padding: 5px 0px;
+}
+
+.loginPara{
+    color: rgba(var(--f52,142,142,142,1));
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0px 40px 20px 40px;
+}
+
+input{
+    padding: 5px;
+    margin: 4px 0px;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form div{
+    width: 80%;
+    margin: auto;
+}
+#submit-btn{
+    background-color: #1773EA;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    width: 80%;
+    cursor: pointer;
+    margin-top: 12px;
+}
+.form2{
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 6px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
